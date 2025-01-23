@@ -8,7 +8,6 @@ public class Giocattore implements Runnable {
     private String nome;
     int[] numbers = new int[9];  // Array per memorizzare i numeri
     private int num = 0;  // Puntatore per controllare l'accesso all'array
-    private final Lock lock = new ReentrantLock(true);  // Lock equo
     private final Object lockObj = new Object();  // Oggetto per la sincronizzazione tra i thread
     private Mappa mappa;
     private ArrayList<Integer> X = new ArrayList<>();
