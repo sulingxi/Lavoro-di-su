@@ -11,8 +11,8 @@ public class Main extends JFrame {
 
     public static void main(String[] args) {
         Main mainFrame = new Main();
-        Giocattore giocattore1 = new Giocattore("paolo", mainFrame.mp,s1,s2,"X");
-        Giocattore giocattore2 = new Giocattore("paolo", mainFrame.mp,s2,s1,"O");
+        Giocattore giocattore1 = new Giocattore("Giocatore1", mainFrame.mp,s1,s2,"X");
+        Giocattore giocattore2 = new Giocattore("Giocatore2", mainFrame.mp,s2,s1,"O");
         giocattore1.start();
         giocattore2.start();
     }
